@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("Masukkan nilai satu ..."));
+        var operator = prompt("Pilih operator [+,-,*,/]");
+        var num2 = parseInt(prompt("Masukkan nilai dua ..."));
+        var hasil;
+
+        switch (operator) {
+            case '+':
+                hasil = num1 + num2;
+                break;
+            case '-':
+                hasil = num1 - num2;
+                break;
+            case '*':
+                hasil = num1 * num2;
+                break;
+            case '/':
+                hasil = num1 / num2;
+                break;
+            default:
+                hasil = 'Operasi tidak dikenali';
+        }
+
+        alert(`Hasilnya adalah ${hasil}`);
+
+        var iya = confirm("Apakah kamu mau menghitung ulang?");
+
+        if (iya) {
+            window.location = "D:/yosi/hacker/hackerSatu.html"; 
+        } else {
+            document.write("Baiklah, terima kasih yaa...");
+        }
+    </script>
+</body>
+</html>
+
